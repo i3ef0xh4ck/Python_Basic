@@ -1,5 +1,4 @@
 # coding=utf-8
-import itertools
 
 naturals = itertools.count(10)  # 自然数序列,从10开始
 print(type(naturals))

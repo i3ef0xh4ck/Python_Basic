@@ -8,8 +8,6 @@ for parent, dir_names, file_names in os.walk(root_dir):
     for filename in file_names:
         phone_list.append(os.path.basename(parent))
 pd.Series(list(set(phone_list))).to_csv('3.txt', index=None)
-pd.DataFrame([1, 3, 4])
-pd.datetime(year, month, day)
-print pd.datetime(2016, 12, 12)
+print(pd.datetime(2016, 12, 12))
 plt.plot([1, 2, 3, 4, 5])
 plt.show()

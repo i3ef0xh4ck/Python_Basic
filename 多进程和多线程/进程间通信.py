@@ -20,11 +20,12 @@ def read(q):
         value = q.get(True)
         print('从队列中获取%s' % value)
 
+
 if __name__ == '__main__':
     # 父进程创建queue,并传给各个子进程
     q = Queue()
-    pw = Process(target=write, args=(q, ))
-    pr = Process(target=read, args=(q, ))
+    pw = Process(target=write, args=(q,))
+    pr = Process(target=read, args=(q,))
     pw.start()  # 启动子进程pw,写入
     pr.start()  # 启动子进程pr,读取
     pw.join()

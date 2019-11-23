@@ -1,4 +1,3 @@
-# coding=utf-8
 # type()函数创建class
 def f1(self, name='world'):
     print('hello %s' % name)

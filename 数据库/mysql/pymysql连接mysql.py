@@ -5,7 +5,7 @@ conn = pymysql.connect(host="39.107.52.113",
                        db="dmp")
 cur = conn.cursor()
 
-cur.execute("select * from w_cdh_app_daydata limit 10")
+cur.execute("select * from tablename limit 10")
 result = cur.fetchall()
 
 for i in result:

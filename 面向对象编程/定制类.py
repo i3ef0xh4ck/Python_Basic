@@ -53,7 +53,7 @@ class Fib(object):
 
 
 for i in Fib():
-    print i
+    print(i)
 
 # __getitem__
 # 添加[]索引功能
@@ -93,8 +93,8 @@ class Fib3(object):
             return L
 
 f = Fib3()
-print f[3]
-print f[3:10]
+print(f[3])
+print(f[3:10])
 """
 也没有对负数作处理，所以，要正确实现一个__getitem__()还是有很多工作要做的。
 
@@ -122,15 +122,15 @@ class Student(object):
             return 99
 
 s = Student()
-print s.name
-print s.score
+print(s.name)
+print(s.score)
 
 # __call__
 # 一个对象实例可以有自己的属性和方法，当我们调用实例方法时，我们用instance.method()来调用。能不能直接在实例本身上调用呢？类似instance()？在Python中，答案是肯定的。
 
 
 class Student4(object):
-    def __init__(self):
+    def __init__(self, name):
         self.name = name
 
     def __call__(self):
@@ -138,4 +138,4 @@ class Student4(object):
 
 
 s5 = Student4('Michael')
-print s5()
+print(s5())

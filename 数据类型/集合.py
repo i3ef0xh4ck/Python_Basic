@@ -1,4 +1,3 @@
-# coding=utf-8
 # 检查列表中的有重复的元素
 some_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
 duplicates = set([x for x in some_list if some_list.count(x) > 1])

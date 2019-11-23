@@ -9,4 +9,4 @@ import os
 # os.rename('test.txt', 'test2.txt')  # 文件重命名
 # os.remove('test2.txt')  # 删除文件
 # os.removedirs('path')  # 删除文件夹
-print([x for x in os.listdir('.') if os.path.isfile(x) and os.path.splitext(x)[1] == '.py'])  #当前文件夹所有py文件
+print([x for x in os.listdir('python3') if os.path.isfile(x) and os.path.splitext(x)[1] == '.py'])  # 当前文件夹所有py文件
