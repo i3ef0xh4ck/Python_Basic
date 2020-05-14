@@ -1,0 +1,18 @@
+{
+    "ci": "",
+    "source_id": "",
+    "data_id": "",
+    "service": ["1", "2"],
+    "name": "",
+    "count": 1,
+    "source": {
+        "type": "logwarn",
+        "model_id": "modelId"
+    },
+    "source_type": "logwarn",
+    "source_name": "templateId",
+    "start_time": 1578931200000,
+    "severity": 1,
+    "score": 52.5,
+    "labels": ["label1", "label2"]
+}
